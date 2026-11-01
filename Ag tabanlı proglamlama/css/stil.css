@@ -148,5 +148,68 @@ düzgün durmasını sağlar*/
 /* Fareyle kartın üzerine gelince hafif yukarı kalkma efekti (Modern UI) */
 .grid-container section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);}
+/* ---- 2. HAFTA: Gelişmiş CSS Düzenlemeleri ve Mobil Uyum ---- */
+
+/* Tablo Stilleri (Kurallar ve Raporlar Sayfası İçin) */
+ttable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--kutu-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--ana-renk);
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--ana-renk);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0b3962;
+    text-decoration: none;
+}
+
+/* Mobil Ekranlar İçin Ekstra Duyarlılık (Responsive Media Query) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px;
+    }
+
+    body {
+        padding: 10px;
+    }
 }
