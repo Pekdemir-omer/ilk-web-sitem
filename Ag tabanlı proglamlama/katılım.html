@@ -3,37 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekibimize Katılın - TEKNOFEST Çip Tasarımı</title>
+    <title>İletişim - TEKNOFEST Çip Tasarım Takımı</title>
+    <!-- Ortak CSS Dosyamız -->
+    <link rel="stylesheet" href="stil.css">
 </head>
 <body>
-    <header style="text-align: center;">
-        <h1>Ekibimize Katılmak İster Misiniz?</h1>
-        <p>TEKNOFEST Çip Tasarımı heyecanımıza ortak olmak ve birlikte üretmek istiyorsan başvurunu bekliyoruz!</p>
+
+    <!-- Üst Bilgi ve Başlık Alanı -->
+    <header>
+        <h1>TEKNOFEST Çip Tasarım Takımı</h1>
+        <p>Bizimle İletişime Geçin ve Sorularınızı İletin</p>
     </header>
 
-    <section>
-        <h2>Kimleri Arıyoruz?</h2>
+    <!-- Minimalist Navigasyon -->
+    <nav>
         <ul>
-            <li>Dijital tasarım, Verilog/VHDL veya FPGA konularına ilgisi olan,</li>
-            <li>Takım çalışmasına yatkın ve sorumluluk alabilen,</li>
-            <li>Öğrenmeye ve araştırmaya hevesli takım arkadaşları arıyoruz.</li>
+            <li><a href="index.html">Ana Sayfa</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section>
-        <h2>Başvuru Formu</h2>
-        <p>Ekibimize katılmak için aşağıdaki başvuru formu PDF dosyasını indirip doldurabilirsin:</p>
-        <a href="basvuru-formu.pdf" target="_blank">Başvuru Formunu İndir (PDF)</a>
-    </section>
+    <!-- Ana İçerik Alanı -->
+    <main>
+        <section>
+            <h2>İletişim Bilgileri ve Mesaj Formu</h2>
+            <p>Projemiz hakkında bilgi almak, iş birliği yapmak veya ekibimize ulaşmak için aşağıdaki iletişim kanallarını kullanabilir ya da formu doldurabilirsiniz:</p>
+            
+            <!-- İletişim Bilgileri Tablosu veya Listesi -->
+            <div style="margin: 20px 0; background-color: var(--kutu-bg); padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <p><strong>E-Posta:</strong> ciptasarim@universite.edu.tr</p>
+                <p><strong>Kampüs / Konum:</strong> Mühendislik Fakültesi, Bilgisayar Mühendisliği Bölümü</p>
+                <p><strong>Çalışma Saatleri:</strong> Hafta içi 09:00 - 17:00</p>
+            </div>
 
-    <section>
-        <h2>Nasıl Göndereceksin?</h2>
-        <p>Doldurduğun formu bize şu e-posta adresinden ulaştırabilirsin:</p>
-        <a href="mailto:pekdemirm030@gmail.com">pekdemirm030@gmail.com</a>
-    </section>
+            <!-- İletişim Formu -->
+            <h3 style="margin-top: 30px;">Bize Mesaj Gönderin</h3>
+            <form action="#" method="POST">
+                <label for="isim">Adınız Soyadınız:</label>
+                <input type="text" id="isim" name="isim" placeholder="Adınızı girin" required>
 
-    <br><br>
-    <!-- Ana sayfaya geri dönmek için bağlantı -->
-    <a href="index.html">← Ana Sayfaya Dön</a>
+                <label for="eposta">E-Posta Adresiniz:</label>
+                <input type="email" id="eposta" name="eposta" placeholder="ornek@mail.com" required>
+
+                <label for="konu">Mesaj Konusu:</label>
+                <input type="text" id="konu" name="konu" placeholder="Örn: Proje İş Birliği / Soru">
+
+                <label for="mesaj">Mesajınız:</label>
+                <textarea id="mesaj" name="mesaj" rows="4" placeholder="Mesajınızı buraya yazabilirsiniz..." required></textarea>
+
+                <button type="submit" class="btn" style="width: 100%; border: none; margin-top: 10px;">Mesajı Gönder</button>
+            </form>
+            
+            <!-- Ana Sayfaya Dönüş -->
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="index.html" class="btn">Ana Sayfaya Dön</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Alt Bilgi -->
+    <footer>
+        <p style="text-align: center; margin-top: 25px; color: #666; font-size: 0.9rem;">
+            &copy; 2026 TEKNOFEST Çip Tasarım Takımı | BLM2537 Projesi
+        </p>
+    </footer>
+
 </body>
 </html>
