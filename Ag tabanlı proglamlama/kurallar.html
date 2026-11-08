@@ -4,31 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yarışma Kuralları ve Şartname - TEKNOFEST Çip Tasarımı</title>
+    <!-- 1. ve 2. Haftada Hazırladığımız Ortak CSS Dosyası -->
+    <link rel="stylesheet" href="stil.css">
 </head>
 <body>
-    <header style="text-align: center;">
-        <h1>Yarışma Kuralları ve Şartname</h1>
-        <p>TEKNOFEST Çip Tasarımı Yarışması kuralları ve resmi dokümanları bu sayfada yer almaktadır.</p>
+
+    <!-- Üst Bilgi ve Başlık Alanı (Kurumsal Mavi Stil) -->
+    <header>
+        <h1>TEKNOFEST Çip Tasarım Takımı</h1>
+        <p>Yarışma Kuralları, Teknik Kriterler ve Resmi Dokümanlar</p>
     </header>
 
-    <section>
-        <h2>Genel Kurallar ve Kriterler</h2>
+    <!-- Ortak Navigasyon Menüsü (Flexbox Uyumlu) -->
+<!-- Sadece Ana Sayfaya Dönüş İçin Minimal Menü -->
+    <nav>
         <ul>
-            <li>Takım üyesi sınırlamaları ve öğrenim seviyesi şartları.</li>
-            <li>Tasarım aşamaları ve son teslim tarihleri.</li>
-            <li>Kullanılacak yazılımlar ve donanım kısıtlamaları.</li>
+            <li><a href="index.html">Ana Sayfa</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section>
-        <h2>Resmi Şartname</h2>
-        <p>Yarışmanın tüm detaylarını içeren resmi şartname dosyasına buradan ulaşabilirsiniz:</p>
-        <!-- Şartname PDF'ini de ana klasöre veya raporlar klasörüne atıp buraya bağlayabilirsin -->
-        <a href="sartname.pdf" target="_blank">Resmi Şartnameyi İndir (PDF)</a>
-    </section>
+    <!-- Ana İçerik Alanı -->
+    <main>
+        <!-- Genel Kurallar Bölümü -->
+        <section>
+            <h2>Genel Kurallar ve Katılım Kriterleri</h2>
+            <p>TEKNOFEST Çip Tasarım Yarışması kapsamında ekibimizin ve başvuran adayların uyması gereken temel hususlar şunlardır:</p>
+            <ul>
+                <li><strong>Takım Sınırlamaları:</strong> Takımlar lisans ve lisansüstü öğrencilerinden oluşmakta olup en az 2, en fazla 5 üye içermelidir.</li>
+                <li><strong>Tasarım Aşamaları:</strong> Tasarım süreci Ön Tasarım Raporu (ÖTR) ve Detaylı Tasarım Raporu (DTR) olarak iki ana teslimden oluşur.</li>
+                <li><strong>Yazılım ve Donanım:</strong> Açık kaynaklı EDA araçları ve belirlenen standart hücre (Standard Cell) kütüphaneleri kullanılacaktır.</li>
+            </ul>
+        </section>
 
-    <br><br>
-    <!-- Ana sayfaya geri dönmek için bağlantı -->
-    <a href="index.html">← Ana Sayfaya Dön</a>
+        <!-- Aşamalar ve Değerlendirme Tablosu (2. Hafta Tablo Stili) -->
+        <section>
+            <h2>Değerlendirme Aşamaları ve Puanlama</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aşama / Doküman</th>
+                        <th>Açıklama</th>
+                        <th>Puan Ağırlığı</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ön Tasarım Raporu (ÖTR)</td>
+                        <td>Mimari ve blok diyagram tasarımı</td>
+                        <td>%20</td>
+                    </tr>
+                    <tr>
+                        <td>Detaylı Tasarım Raporu (DTR)</td>
+                        <td>Devre şeması, simülasyon ve RTL kodları</td>
+                        <td>%30</td>
+                    </tr>
+                    <tr>
+                        <td>Çip Üretim & Test</td>
+                        <td>GDSII çıktısı, fiziksel tasarım ve ölçümler</td>
+                        <td>%50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Resmi Şartname ve İndirme Butonu -->
+        <section style="text-align: center;">
+            <h2>Resmi Yarışma Şartnamesi</h2>
+            <p>Yarışmanın tüm teknik detaylarını, kurallarını ve değerlendirme kriterlerini içeren resmi dokümana aşağıdaki bağlantıdan ulaşabilirsiniz:</p>
+            <div style="margin: 20px 0;">
+                <!-- 2. Haftada Oluşturduğumuz .btn Sınıfını Kullandık -->
+                <a href="sartname.pdf" target="_blank" class="btn">Resmi Şartnameyi İndir (PDF)</a>
+            </div>
+            <p><a href="index.html">← Ana Sayfaya Dön</a></p>
+        </section>
+    </main>
+
+    <!-- Sayfa Altı Bilgisi (Footer) -->
+    <footer>
+        <p style="text-align: center; margin-top: 25px; color: #666; font-size: 0.9rem;">
+            &copy; 2026 TEKNOFEST Çip Tasarım Takımı | BLM2537 Ders Projesi
+        </p>
+    </footer>
+
 </body>
 </html>
