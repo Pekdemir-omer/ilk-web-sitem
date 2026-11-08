@@ -3,38 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Örnek Raporlar - TEKNOFEST Çip Tasarımı</title>
+    <title>Geçmiş Yarışma Raporları - TEKNOFEST Çip Tasarım</title>
+    <!-- Ortak CSS Dosyamız -->
+    <link rel="stylesheet" href="stil.css">
 </head>
 <body>
-    <header style="text-align: center;">
-        <h1>Daha Önceki Raporlar</h1>
-        <p>Yarışma sürecinde hazırladığımız veya incelediğimiz örnek raporları buradan indirebilirsiniz.</p>
+
+    <!-- Üst Bilgi ve Başlık Alanı -->
+    <header>
+        <h1>TEKNOFEST Çip Tasarım Takımı</h1>
+        <p>Geçmiş Yarışmalarda Başarı Elde Etmiş Örnek Rapor Arşivi</p>
     </header>
 
-    <section>
-        <h2>Tasarım Raporları</h2>
+    <!-- Minimalist Navigasyon -->
+    <nav>
         <ul>
-            <li>
-                <strong>Ön Tasarım Raporu (ÖTR) Örneği:</strong> 
-                <a href="raporlar/otr-ornek.pdf" target="_blank">PDF İndir</a>
-            </li>
-            <li>
-                <strong>Kritik Tasarım Raporu (KTR) Örneği:</strong> 
-                <a href="raporlar/ktr-ornek.pdf" target="_blank">PDF İndir</a>
-            </li>
+            <li><a href="index.html">Ana Sayfa</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section>
-        <h2>Faydalı Dokümanlar</h2>
-        <p>Çip tasarımı ve simülasyon süreçlerinde işinize yarayabilecek ek kaynaklar:</p>
-        <ul>
-            <li><a href="raporlar/sunum-sablonu.pptx" target="_blank">Takım Sunum Şablonu</a></li>
-        </ul>
-    </section>
+    <!-- Ana İçerik Alanı -->
+    <main>
+        <section>
+            <h2>Geçmiş Yılların Başarılı Raporları</h2>
+            <p>Bu sayfada, önceki TEKNOFEST Çip Tasarım Yarışmalarında dereceye giren takımların hazırladığı ve bizim projemize rehberlik edecek örnek Ön Tasarım ve Detaylı Tasarım raporları yer almaktadır:</p>
+            
+            <!-- Raporlar Tablosu -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Yıl / Sezon</th>
+                        <th>Rapor Adı ve Açıklama</th>
+                        <th>İncele / İndir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024 Şampiyonu</td>
+                        <td><strong>Ön Tasarım Raporu (ÖTR) Örneği:</strong> Mimari blok şemaları ve veri yolu analizleri.</td>
+                        <td><a href="#" class="btn" style="padding: 6px 12px; font-size: 0.85rem;">PDF İndir</a></td>
+                    </tr>
+                    <tr>
+                        <td>2024 Şampiyonu</td>
+                        <td><strong>Detaylı Tasarım Raporu (DTR) Örneği:</strong> RTL kod simülasyonları ve GDSII akış detayları.</td>
+                        <td><a href="#" class="btn" style="padding: 6px 12px; font-size: 0.85rem;">PDF İndir</a></td>
+                    </tr>
+                    <tr>
+                        <td>2025 Finalisti</td>
+                        <td><strong>Örnek Sistem Mimarisi Raporu:</strong> Düşük güç tüketimli çip tasarımı optimizasyonları.</td>
+                        <td><a href="#" class="btn" style="padding: 6px 12px; font-size: 0.85rem;">PDF İndir</a></td>
+                    </tr>
+                    <tr>
+                        <td>Projemiz (2026)</td>
+                        <td><strong>Kendi Plan Belgemiz:</strong> BLM2537 dönemi 9 haftalık gelişim yol haritamız.</td>
+                        <td><a href="#" class="btn" style="padding: 6px 12px; font-size: 0.85rem;">Planı İncele</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Ana Sayfaya Dönüş Butonu -->
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="index.html" class="btn">Ana Sayfaya Dön</a>
+            </div>
+        </section>
+    </main>
 
-    <br><br>
-    <!-- Ana sayfaya geri dönmek için bağlantı -->
-    <a href="index.html">← Ana Sayfaya Dön</a>
+    <!-- Alt Bilgi -->
+    <footer>
+        <p style="text-align: center; margin-top: 25px; color: #666; font-size: 0.9rem;">
+            &copy; 2026 TEKNOFEST Çip Tasarım Takımı | BLM2537 Projesi
+        </p>
+    </footer>
+
 </body>
 </html>
