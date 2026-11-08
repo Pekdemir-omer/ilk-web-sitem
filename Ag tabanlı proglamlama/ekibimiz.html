@@ -3,35 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekip Faaliyetlerimiz - TEKNOFEST Çip Tasarımı</title>
+    <title>Ekibimiz - TEKNOFEST Çip Tasarım</title>
+    <link rel="stylesheet" href="stil.css">
 </head>
 <body>
-    <header style="text-align: center;">
-        <h1>Ekip Olarak Ne Yapıyoruz?</h1>
-        <p>TEKNOFEST Çip Tasarımı yarışması sürecinde gerçekleştirdiğimiz teknik çalışmalar ve adımlar.</p>
+
+    <header>
+        <h1>TEKNOFEST Çip Tasarım Takımı</h1>
+        <p>Projemizi Geliştiren Ekip Üyeleri</p>
     </header>
 
-    <section>
-        <h2>Tasarım ve Simülasyon Süreci</h2>
-        <p>Yarışma boyunca çip tasarımını gerçekleştirmek için izlediğimiz temel aşamalar:</p>
-        <ul>
-            <li><strong>RTL Tasarımı:</strong> Verilog / VHDL dilleri kullanarak devre mimarisinin kodlanması.</li>
-            <li><strong>Doğrulama ve Benzetim (Simulation):</strong> Tasarlanan devrenin testbench'ler ile simüle edilerek hataların ayıklanması.</li>
-            <li><strong>Sentez Aşaması:</strong> Tasarımın hedef donanıma uygun hale getirilmesi ve optimize edilmesi.</li>
-        </ul>
-    </section>
+    <!-- Minimalist Navigasyon -->
 
-    <section>
-        <h2>Haftalık Çalışmalarımız</h2>
-        <p>Takım olarak düzenli toplantılar yapıyor, görev dağılımı ile süreci hızlandırıyoruz:</p>
-        <ul>
-            <li>Haftalık ilerleme raporları ve kod incelemeleri (Code Review).</li>
-            <li>Literatür taraması ve önceki yıl finalist projelerinin incelenmesi.</li>
-        </ul>
-    </section>
 
-    <br><br>
-    <!-- Ana sayfaya geri dönmek için bağlantı -->
-    <a href="index.html">← Ana Sayfaya Dön</a>
+    <main>
+        <h2>Takım Kadromuz</h2>
+        <p>Çip tasarımı, web arayüzü ve raporlama süreçlerini yürüten ÖGE ekibimiz:</p>
+
+        <!-- CSS Grid Kart Yapısı -->
+        <div class="grid-container">
+            <section>
+                <h3>Takım Lideri / RTL Tasarımcısı</h3>
+                <p><strong>Öğrenci adı:</strong> Ömer Pekdemir</p>
+                <p><strong>Görev:</strong> Mimari tasarım, Verilog kodlama ve simülasyon süreçleri.</p>
+            </section>
+
+            <section>
+                <h3>Web ve Arayüz Geliştiricisi</h3>
+                <p><strong>Ad Soyad:</strong> Gencay Sayar</p>
+                <p><strong>Görev:</strong> HTML5, CSS3 mimarisi, Responsive tasarım ve site yönetimi.</p>
+            </section>
+
+            <section>
+                <h3>Doğrulama ve Test Sorumlusu</h3>
+                <p><strong>Ad Soyad:</strong> Muhammed Emin Ergin</p>
+                <p><strong>Görev:</strong> Testbench yazımı, dalga formu analizi ve raporlama.</p>
+            </section>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="index.html" class="btn">Ana Sayfaya Dön</a>
+        </div>
+    </main>
+
+    <footer>
+        <p style="text-align: center; margin-top: 25px; color: #666; font-size: 0.9rem;">
+            &copy; 2026 TEKNOFEST Çip Tasarım Takımı 
+        </p>
+    </footer>
+
 </body>
 </html>
