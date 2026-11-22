@@ -3,68 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İletişim - TEKNOFEST Çip Tasarım Takımı</title>
-    <!-- Ortak CSS Dosyamız -->
+    <title>Takıma Katıl - TEKNOFEST Çip Tasarım Takımı</title>
     <link rel="stylesheet" href="stil.css">
 </head>
 <body>
 
-    <!-- Üst Bilgi ve Başlık Alanı -->
     <header>
         <h1>TEKNOFEST Çip Tasarım Takımı</h1>
-        <p>Bizimle İletişime Geçin ve Sorularınızı İletin</p>
+        <p>Ekibimize Katılmak İçin Başvuru Formu</p>
     </header>
 
-    <!-- Minimalist Navigasyon -->
     <nav>
         <ul>
             <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="kurallar.html">Kurallar</a></li>
+            <li><a href="raporlar.html">Raporlar</a></li>
+            <li><a href="ekibimiz.html">Ekibimiz</a></li>
+            <li><a href="katil.html" class="aktif">Katıl / Başvuru</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
         </ul>
     </nav>
 
-    <!-- Ana İçerik Alanı -->
     <main>
         <section>
-            <h2>İletişim Bilgileri ve Mesaj Formu</h2>
-            <p>Projemiz hakkında bilgi almak, iş birliği yapmak veya ekibimize ulaşmak için aşağıdaki iletişim kanallarını kullanabilir ya da formu doldurabilirsiniz:</p>
-            
-            <!-- İletişim Bilgileri Tablosu veya Listesi -->
-            <div style="margin: 20px 0; background-color: var(--kutu-bg); padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                <p><strong>E-Posta:</strong> ciptasarim@universite.edu.tr</p>
-                <p><strong>Kampüs / Konum:</strong> Mühendislik Fakültesi, Bilgisayar Mühendisliği Bölümü</p>
-                <p><strong>Çalışma Saatleri:</strong> Hafta içi 09:00 - 17:00</p>
-            </div>
+            <h2>Üye Başvuru Formu</h2>
+            <p>RTL tasarım, analog devre, doğrulama ya da web/raporlama alanlarından birinde katkı vermek istiyorsan formu doldur. Takım kadromuzu <a href="ekibimiz.html">Ekibimiz</a> sayfasında görebilirsin.</p>
+            <p class="bilgi-kutu">Şartnameye göre bir takım en fazla 5 kişiden oluşabilir. <span class="zorunlu">*</span> işaretli alanlar zorunludur.</p>
 
-            <!-- İletişim Formu -->
-            <h3 style="margin-top: 30px;">Bize Mesaj Gönderin</h3>
-            <form action="#" method="POST">
-                <label for="isim">Adınız Soyadınız:</label>
-                <input type="text" id="isim" name="isim" placeholder="Adınızı girin" required>
+            <!-- 4. HAFTA: Form HTML5 doğrulamaları ile detaylandırıldı
+                 (required, type="email", pattern, minlength/maxlength, accept).
+                 Gönderilen veriler 6. haftada JavaScript ile localStorage'a kaydedilecek. -->
+            <form action="#" method="post" enctype="multipart/form-data">
 
-                <label for="eposta">E-Posta Adresiniz:</label>
-                <input type="email" id="eposta" name="eposta" placeholder="ornek@mail.com" required>
+                <fieldset>
+                    <legend>Kişisel Bilgiler</legend>
 
-                <label for="konu">Mesaj Konusu:</label>
-                <input type="text" id="konu" name="konu" placeholder="Örn: Proje İş Birliği / Soru">
+                    <label for="adsoyad">Ad Soyad <span class="zorunlu">*</span></label>
+                    <input type="text" id="adsoyad" name="adsoyad"
+                           placeholder="Örn: Ayşe Yılmaz"
+                           required minlength="5" maxlength="60"
+                           pattern="[A-Za-zÇĞİÖŞÜçğıöşü ]+"
+                           title="Sadece harf ve boşluk kullanın (en az 5 karakter)"
+                           autocomplete="name">
 
-                <label for="mesaj">Mesajınız:</label>
-                <textarea id="mesaj" name="mesaj" rows="4" placeholder="Mesajınızı buraya yazabilirsiniz..." required></textarea>
+                    <div class="form-satir">
+                        <div>
+                            <label for="eposta">E-posta <span class="zorunlu">*</span></label>
+                            <input type="email" id="eposta" name="eposta"
+                                   placeholder="ornek@mail.com" required autocomplete="email">
+                        </div>
+                        <div>
+                            <label for="telefon">Telefon</label>
+                            <input type="tel" id="telefon" name="telefon"
+                                   placeholder="05XXXXXXXXX"
+                                   pattern="05[0-9]{9}"
+                                   title="05 ile başlayan 11 haneli numara girin"
+                                   autocomplete="tel">
+                        </div>
+                    </div>
+                </fieldset>
 
-                <button type="submit" class="btn" style="width: 100%; border: none; margin-top: 10px;">Mesajı Gönder</button>
+                <fieldset>
+                    <legend>Öğrenim Bilgileri</legend>
+
+                    <div class="form-satir">
+                        <div>
+                            <label for="ogrno">Öğrenci Numarası <span class="zorunlu">*</span></label>
+                            <input type="text" id="ogrno" name="ogrno"
+                                   placeholder="Örn: 25290128"
+                                   required pattern="[0-9]{8,11}" inputmode="numeric"
+                                   title="8-11 haneli, sadece rakam">
+                        </div>
+                        <div>
+                            <label for="bolum">Bölüm <span class="zorunlu">*</span></label>
+                            <select id="bolum" name="bolum" required>
+                                <option value="">-- Bölüm seçin --</option>
+                                <option value="bilgisayar">Bilgisayar Mühendisliği</option>
+                                <option value="elektrik-elektronik">Elektrik-Elektronik Mühendisliği</option>
+                                <option value="elektronik-hab">Elektronik ve Haberleşme Mühendisliği</option>
+                                <option value="yazilim">Yazılım Mühendisliği</option>
+                                <option value="fizik">Fizik / Fizik Mühendisliği</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label>Öğrenim Düzeyi <span class="zorunlu">*</span></label>
+                    <div class="secenekler">
+                        <label><input type="radio" name="duzey" value="onlisans" required> Ön Lisans</label>
+                        <label><input type="radio" name="duzey" value="lisans"> Lisans</label>
+                        <label><input type="radio" name="duzey" value="yukseklisans"> Yüksek Lisans</label>
+                    </div>
+
+                    <label for="sinif">Sınıf</label>
+                    <input type="number" id="sinif" name="sinif" min="1" max="6" placeholder="1-6">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Takımdaki Rolün</legend>
+
+                    <label>Hangi kategoride çalışmak istersin? <span class="zorunlu">*</span></label>
+                    <div class="secenekler">
+                        <label><input type="radio" name="kategori" value="analog" required> Analog Tasarım</label>
+                        <label><input type="radio" name="kategori" value="mikrodenetleyici"> Mikrodenetleyici Tasarım</label>
+                        <label><input type="radio" name="kategori" value="farketmez"> Fark etmez</label>
+                    </div>
+
+                    <label>İlgi alanların</label>
+                    <div class="secenekler">
+                        <label><input type="checkbox" name="ilgi" value="rtl"> RTL / Verilog</label>
+                        <label><input type="checkbox" name="ilgi" value="dogrulama"> Doğrulama / Test</label>
+                        <label><input type="checkbox" name="ilgi" value="fpga"> FPGA</label>
+                        <label><input type="checkbox" name="ilgi" value="analog"> Analog Devre</label>
+                        <label><input type="checkbox" name="ilgi" value="fiziksel"> Fiziksel Tasarım (GDSII)</label>
+                        <label><input type="checkbox" name="ilgi" value="rapor"> Rapor / Web</label>
+                    </div>
+
+                    <label for="deneyim">Kendini kısaca anlat <span class="zorunlu">*</span></label>
+                    <textarea id="deneyim" name="deneyim" rows="5"
+                              placeholder="Daha önce yaptığın projeler, bildiğin araçlar (Verilog, LTspice, Vivado vb.)..."
+                              required minlength="30" maxlength="500"></textarea>
+                    <small class="ipucu">En az 30, en fazla 500 karakter.</small>
+
+                    <label for="cv">CV Yükle (PDF) <span class="zorunlu">*</span></label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,application/pdf" required>
+                    <small class="ipucu">Sadece PDF dosyası kabul edilir.</small>
+                </fieldset>
+
+                <div class="secenekler">
+                    <label>
+                        <input type="checkbox" name="onay" required>
+                        Bilgilerimin takım başvurusu için kullanılmasını kabul ediyorum. <span class="zorunlu">*</span>
+                    </label>
+                </div>
+
+                <div class="form-butonlar">
+                    <button type="submit">Başvuruyu Gönder</button>
+                    <button type="reset" class="btn-ikincil">Formu Temizle</button>
+                </div>
             </form>
-            
-            <!-- Ana Sayfaya Dönüş -->
-            <div style="margin-top: 30px; text-align: center;">
-                <a href="index.html" class="btn">Ana Sayfaya Dön</a>
-            </div>
         </section>
     </main>
 
-    <!-- Alt Bilgi -->
     <footer>
-        <p style="text-align: center; margin-top: 25px; color: #666; font-size: 0.9rem;">
-            &copy; 2026 TEKNOFEST Çip Tasarım Takımı | BLM2537 Projesi
-        </p>
+        <p>&copy; 2026 TEKNOFEST Çip Tasarım Takımı | ÖGE Takımı</p>
     </footer>
 
 </body>
