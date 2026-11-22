@@ -3,68 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teknofest Çip Tasarım Yarışması</title>
-    <!-- 4. HAFTA: Diğer sayfalarla aynı olsun diye CSS yolu "stil.css" yapıldı -->
+    <title>Ekibimiz - TEKNOFEST Çip Tasarım</title>
     <link rel="stylesheet" href="stil.css">
 </head>
 <body>
 
-<header>
-    <img src="logo.jpg" alt="TEKNOFEST logosu" width="200">
-    <h1>TEKNOFEST ÇİP TASARIM YARIŞMASI</h1>
-    <!--burada sitenin arama yaparken üstteki adını değiştirdim-->
-</header>
+    <header>
+        <h1>TEKNOFEST Çip Tasarım Takımı</h1>
+        <p>Projemizi Geliştiren Ekip Üyeleri</p>
+    </header>
 
-<!--direk alt menüye geçmeden önce kısa sade bir menü oluşturdum -->
-<nav>
-    <ul>
-        <li><a href="index.html" class="aktif">Ana Sayfa</a></li>
-        <li><a href="kurallar.html">Kurallar</a></li>
-        <li><a href="raporlar.html">Raporlar</a></li>
-        <li><a href="ekibimiz.html">Ekibimiz</a></li>
-        <li><a href="katil.html">Katıl / Başvuru</a></li>
-        <li><a href="iletisim.html">İletişim</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="kurallar.html">Kurallar</a></li>
+            <li><a href="raporlar.html">Raporlar</a></li>
+            <li><a href="ekibimiz.html" class="aktif">Ekibimiz</a></li>
+            <li><a href="katil.html">Katıl / Başvuru</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
 
-<!-- Burada üstteki menünün biraz daha detaylı kısmını koydum ilk defa
-  siteye girenler için ekstra bir sorun veya şikayet olursa bana mail
-  atmaları için mail adresi bıraktım-->
-<div class="grid-container">
-    <section>
-        <h2>Yarışma Kuralları</h2>
-        <p>2026 takvimi, katılım şartları ve puanlama tabloları.</p>
-        <a href="kurallar.html">Kuralları İncele</a>
-    </section>
+    <main>
+        <h2>Takım Kadromuz</h2>
+        <p>Çip tasarımı, web arayüzü ve raporlama süreçlerini yürüten ÖGE ekibimiz:</p>
 
-    <section>
-        <h2>Şartname, Şablonlar ve Raporlar</h2>
-        <p>Resmi şartname, ÖTR/DTR şablonları ve 2022 örnek raporları.</p>
-        <a href="raporlar.html">Belgelere Git</a>
-    </section>
+        <div class="grid-container">
+            <section>
+                <h3>Takım Lideri / RTL Tasarımcısı</h3>
+                <p><strong>Ad Soyad:</strong> Ömer Pekdemir</p>
+                <p><strong>Görev:</strong> Mimari tasarım, Verilog kodlama ve simülasyon süreçleri.</p>
+            </section>
 
-    <section>
-        <h2>Ekip Olarak Ne Yapıyoruz</h2>
-        <p>Takım üyelerimiz, görev dağılımı ve çalışmalarımızdan fotoğraflar.</p>
-        <a href="ekibimiz.html">Detayları İncele</a>
-    </section>
+            <section>
+                <h3>Web ve Arayüz Geliştiricisi</h3>
+                <p><strong>Ad Soyad:</strong> Gencay Sayar</p>
+                <p><strong>Görev:</strong> HTML5, CSS3 mimarisi, Responsive tasarım ve site yönetimi.</p>
+            </section>
 
-    <section>
-        <h2>Ekibimize Katılmak İster misiniz?</h2>
-        <p>Başvuru formunu doldurun, size dönüş yapalım.</p>
-        <a href="katil.html">Başvuru Formu</a>
-    </section>
+            <section>
+                <h3>Doğrulama ve Test Sorumlusu</h3>
+                <p><strong>Ad Soyad:</strong> Muhammed Emin Ergin</p>
+                <p><strong>Görev:</strong> Testbench yazımı, dalga formu analizi ve raporlama.</p>
+            </section>
+        </div>
 
-    <section>
-        <h2>İstek, Şikayet ve İletişim</h2>
-        <p>e-posta: <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=pekdemirm030@gmail.com" target="_blank">pekdemirm030@gmail.com</a></p>
-        <a href="iletisim.html">İletişim Formu</a>
-    </section>
-</div>
+        <!-- 4. HAFTA: Çalışma fotoğrafları için galeri.
+             Fotoğrafı değiştirmek için img klasöründeki calisma-1.jpg vb. dosyaların
+             yerine kendi fotoğrafını aynı isimle koyman yeterli. -->
+        <section style="margin-top: 25px;">
+            <h2>Çalışmalarımızdan Kareler</h2>
+            <div class="galeri">
+                <figure>
+                    <img src="img/calisma-1.jpg" alt="Takım üyeleri laboratuvarda Verilog kodu üzerinde çalışırken">
+                    <figcaption>RTL tasarım çalışması</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/calisma-2.jpg" alt="FPGA kartı üzerinde test yapılırken">
+                    <figcaption>FPGA üzerinde test</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/calisma-3.jpg" alt="Takım toplantısında rapor planlaması">
+                    <figcaption>Rapor planlama toplantısı</figcaption>
+                </figure>
+            </div>
+        </section>
 
-<footer>
-    <p>&copy; 2026 TEKNOFEST Çip Tasarım Takımı | ÖGE Takımı</p>
-</footer>
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="katil.html" class="btn">Takıma Katıl</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TEKNOFEST Çip Tasarım Takımı</p>
+    </footer>
 
 </body>
 </html>
