@@ -4,86 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yarışma Kuralları ve Şartname - TEKNOFEST Çip Tasarımı</title>
-    <!-- 1. ve 2. Haftada Hazırladığımız Ortak CSS Dosyası -->
     <link rel="stylesheet" href="stil.css">
 </head>
 <body>
 
-    <!-- Üst Bilgi ve Başlık Alanı (Kurumsal Mavi Stil) -->
     <header>
         <h1>TEKNOFEST Çip Tasarım Takımı</h1>
         <p>Yarışma Kuralları, Teknik Kriterler ve Resmi Dokümanlar</p>
     </header>
 
-    <!-- Ortak Navigasyon Menüsü (Flexbox Uyumlu) -->
-<!-- Sadece Ana Sayfaya Dönüş İçin Minimal Menü -->
+    <!-- 4. HAFTA: Tüm sayfalarda aynı menü, bulunduğumuz sayfa "aktif" -->
     <nav>
         <ul>
             <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="kurallar.html" class="aktif">Kurallar</a></li>
+            <li><a href="raporlar.html">Raporlar</a></li>
+            <li><a href="ekibimiz.html">Ekibimiz</a></li>
+            <li><a href="katil.html">Katıl / Başvuru</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
         </ul>
     </nav>
 
-    <!-- Ana İçerik Alanı -->
     <main>
-        <!-- Genel Kurallar Bölümü -->
+        <!-- 4. HAFTA: Bilgiler 2026 Teknik Şartname (v1.3, 27.04.2026) belgesinden alındı -->
         <section>
-            <h2>Genel Kurallar ve Katılım Kriterleri</h2>
-            <p>TEKNOFEST Çip Tasarım Yarışması kapsamında ekibimizin ve başvuran adayların uyması gereken temel hususlar şunlardır:</p>
-            <ul>
-                <li><strong>Takım Sınırlamaları:</strong> Takımlar lisans ve lisansüstü öğrencilerinden oluşmakta olup en az 2, en fazla 5 üye içermelidir.</li>
-                <li><strong>Tasarım Aşamaları:</strong> Tasarım süreci Ön Tasarım Raporu (ÖTR) ve Detaylı Tasarım Raporu (DTR) olarak iki ana teslimden oluşur.</li>
-                <li><strong>Yazılım ve Donanım:</strong> Açık kaynaklı EDA araçları ve belirlenen standart hücre (Standard Cell) kütüphaneleri kullanılacaktır.</li>
-            </ul>
+            <h2>Yarışma Hakkında</h2>
+            <p>Çip (Tümdevre) Tasarım Yarışması ilk kez 2022 yılında düzenlenmiştir. Ön lisans, lisans ve yüksek lisans öğrencilerinde mikroelektronik alanında farkındalık oluşturmayı ve tümdevre tasarımı konusunda bilgi birikimi kazandırmayı amaçlar. Yarışma iki kategoriden oluşur:</p>
+
+            <div class="tablo-kutu">
+                <table>
+                    <caption>Tablo 1 – Yarışma Kategorileri</caption>
+                    <thead>
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Düzenleyen</th>
+                            <th>Beklenen Tasarım</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Analog Tasarım</td>
+                            <td>TÜBİTAK</td>
+                            <td>SerDes analog ön-uç ve bant aralığı referans gerilim devreleri</td>
+                        </tr>
+                        <tr>
+                            <td>Mikrodenetleyici Tasarım</td>
+                            <td>Yongatek Mikroelektronik</td>
+                            <td>Hazır işlemci çekirdeği ile çevre birimleri ve bellek içeren mikrodenetleyici; önce FPGA, sonra GDSII fiziksel tasarım</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <!-- Aşamalar ve Değerlendirme Tablosu (2. Hafta Tablo Stili) -->
         <section>
-            <h2>Değerlendirme Aşamaları ve Puanlama</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Aşama / Doküman</th>
-                        <th>Açıklama</th>
-                        <th>Puan Ağırlığı</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Ön Tasarım Raporu (ÖTR)</td>
-                        <td>Mimari ve blok diyagram tasarımı</td>
-                        <td>%20</td>
-                    </tr>
-                    <tr>
-                        <td>Detaylı Tasarım Raporu (DTR)</td>
-                        <td>Devre şeması, simülasyon ve RTL kodları</td>
-                        <td>%30</td>
-                    </tr>
-                    <tr>
-                        <td>Çip Üretim & Test</td>
-                        <td>GDSII çıktısı, fiziksel tasarım ve ölçümler</td>
-                        <td>%50</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2>2026 Yarışma Takvimi</h2>
+            <div class="tablo-kutu">
+                <table>
+                    <caption>Tablo 2 – Önemli Tarihler</caption>
+                    <thead>
+                        <tr>
+                            <th>Aşama</th>
+                            <th>Tarih</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Son Başvuru Tarihi</td><td>28.02.2026</td></tr>
+                        <tr><td>Ön Tasarım Raporu (ÖTR) Son Teslim</td><td>16.03.2026 – 17.00</td></tr>
+                        <tr><td>ÖTR Sonuçları (Ön Eleme)</td><td>12.04.2026</td></tr>
+                        <tr><td>Soru-Cevap Oturumu</td><td>13–17 Nisan 2026</td></tr>
+                        <tr><td>Detay Tasarım Raporu (DTR) Son Teslim</td><td>07.06.2026 – 23.59</td></tr>
+                        <tr><td>Finalist Takımların Açıklanması</td><td>26.06.2026</td></tr>
+                        <tr><td>Soru-Cevap Oturumu</td><td>6–10 Temmuz 2026</td></tr>
+                        <tr><td>Tasarımın Nihai Hale Getirilmesi</td><td>31.07.2026 – 17.00</td></tr>
+                        <tr><td>Final Sunumları ve Demolar</td><td>Ağustos – Eylül 2026</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <!-- Resmi Şartname ve İndirme Butonu -->
+        <section>
+            <h2>Katılım Kuralları</h2>
+            <div class="tablo-kutu">
+                <table>
+                    <caption>Tablo 3 – Takım ve Katılım Şartları</caption>
+                    <thead>
+                        <tr>
+                            <th>Konu</th>
+                            <th>Kural</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Kimler katılabilir?</td><td>Türkiye'de veya yurt dışında okuyan ön lisans, lisans ve yüksek lisans öğrencileri</td></tr>
+                        <tr><td>Takım büyüklüğü</td><td>Bireysel ya da takım olarak; takım en fazla 5 kişi (danışman hariç)</td></tr>
+                        <tr><td>Yüksek lisans öğrencisi</td><td>Bir takımda en fazla 2 kişi</td></tr>
+                        <tr><td>Danışman</td><td>Zorunlu değil; en fazla 1 danışman. Bir danışman her kategoride tek takıma danışmanlık yapabilir</td></tr>
+                        <tr><td>Birden fazla takım</td><td>Farklı kategorilerdeki takımlarda yer alınabilir, aynı kategoride iki takımda yer alınamaz</td></tr>
+                        <tr><td>Tasarım sayısı</td><td>Her kategoriye yalnızca 1 tasarım ile katılınır</td></tr>
+                        <tr><td>Belgeler</td><td>Onaylı öğrenci belgeleri DTR ile birlikte sunulur</td></tr>
+                        <tr><td>Üye ekleme / çıkarma</td><td>DTR teslim tarihine kadar KYS üzerinden yapılır</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Rapor Yazım Kuralları</h2>
+            <div class="tablo-kutu">
+                <table>
+                    <caption>Tablo 4 – ÖTR ve DTR Biçim Kuralları</caption>
+                    <thead>
+                        <tr>
+                            <th>Kriter</th>
+                            <th>Ön Tasarım Raporu (ÖTR)</th>
+                            <th>Detay Tasarım Raporu (DTR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>En fazla sayfa</td><td>9 sayfa</td><td>30 sayfa</td></tr>
+                        <tr><td>Sayfa düzeni</td><td colspan="2">A4, Calibri 11 punto, satır aralığı 1.15, tüm kenarlar 2.5 cm</td></tr>
+                        <tr><td>Dosya</td><td colspan="2">PDF, en fazla 60 MB</td></tr>
+                        <tr><td>Dil</td><td colspan="2">Türkçe veya İngilizce (tüm raporda tek dil)</td></tr>
+                        <tr><td>Kaynak gösterme</td><td colspan="2">IEEE formatı</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="bilgi-kutu">Sayfa sınırına kapak, resimler, tablolar ve referanslar dahildir. İntihal tespit edilirse takım elenir.</p>
+        </section>
+
+        <section>
+            <h2>Değerlendirme ve Puanlama</h2>
+            <p>Puanlama 100 üzerinden yapılır. İki kategorinin ağırlıkları farklıdır:</p>
+            <div class="tablo-kutu">
+                <table>
+                    <caption>Tablo 5 – Puan Ağırlıkları</caption>
+                    <thead>
+                        <tr>
+                            <th>Değerlendirme</th>
+                            <th>Analog Tasarım</th>
+                            <th>Mikrodenetleyici Tasarım</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Ön Tasarım Raporu (ÖTR)</td><td>%15</td><td>%10</td></tr>
+                        <tr><td>Detay Tasarım Raporu (DTR)</td><td>%25</td><td>%15</td></tr>
+                        <tr><td>Sunum</td><td>%35</td><td>%5</td></tr>
+                        <tr><td>Başarım Kriterleri (göz açıklığı, alan, güç)</td><td>%25</td><td>–</td></tr>
+                        <tr><td>FPGA Demo</td><td>–</td><td>%10</td></tr>
+                        <tr><td>Tasarım ve Doğrulama</td><td>–</td><td>%40</td></tr>
+                        <tr><td>Çip Akışı (sentez, P&amp;R, LVS/DRC, GDS)</td><td>–</td><td>%20</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td>Toplam</td><td>%100</td><td>%100</td></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
         <section style="text-align: center;">
             <h2>Resmi Yarışma Şartnamesi</h2>
-            <p>Yarışmanın tüm teknik detaylarını, kurallarını ve değerlendirme kriterlerini içeren resmi dokümana aşağıdaki bağlantıdan ulaşabilirsiniz:</p>
+            <p>Tüm teknik detaylar resmi şartnamede yer almaktadır. Rapor şablonları ve geçmiş yıl raporları için <a href="raporlar.html">Raporlar</a> sayfasına bakabilirsiniz.</p>
             <div style="margin: 20px 0;">
-                <!-- 2. Haftada Oluşturduğumuz .btn Sınıfını Kullandık -->
-                <a href="sartname.pdf" target="_blank" class="btn">Resmi Şartnameyi İndir (PDF)</a>
+                <a href="dosyalar/sartname-2026.pdf" target="_blank" class="btn">Resmi Şartnameyi Aç (PDF)</a>
             </div>
-            <p><a href="index.html">← Ana Sayfaya Dön</a></p>
+            <p>Takıma katılmak isterseniz: <a href="katil.html">Başvuru Formu</a></p>
         </section>
     </main>
 
-    <!-- Sayfa Altı Bilgisi (Footer) -->
     <footer>
-        <p style="text-align: center; margin-top: 25px; color: #666; font-size: 0.9rem;">
-            &copy; 2026 TEKNOFEST Çip Tasarım Takımı | BLM2537 Ders Projesi
-        </p>
+        <p>&copy; 2026 TEKNOFEST Çip Tasarım Takımı | ÖGE Takımı</p>
     </footer>
 
 </body>
