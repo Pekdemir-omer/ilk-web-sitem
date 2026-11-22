@@ -3,76 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geçmiş Yarışma Raporları - TEKNOFEST Çip Tasarım</title>
-    <!-- Ortak CSS Dosyamız -->
+    <title>Şartname, Şablonlar ve Raporlar - TEKNOFEST Çip Tasarım</title>
     <link rel="stylesheet" href="stil.css">
 </head>
 <body>
 
-    <!-- Üst Bilgi ve Başlık Alanı -->
     <header>
         <h1>TEKNOFEST Çip Tasarım Takımı</h1>
-        <p>Geçmiş Yarışmalarda Başarı Elde Etmiş Örnek Rapor Arşivi</p>
+        <p>Şartname, Rapor Şablonları ve Geçmiş Yıl Raporları</p>
     </header>
 
-    <!-- Minimalist Navigasyon -->
     <nav>
         <ul>
             <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="kurallar.html">Kurallar</a></li>
+            <li><a href="raporlar.html" class="aktif">Raporlar</a></li>
+            <li><a href="ekibimiz.html">Ekibimiz</a></li>
+            <li><a href="katil.html">Katıl / Başvuru</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
         </ul>
     </nav>
 
-    <!-- Ana İçerik Alanı -->
+    <!-- 4. HAFTA: Örnek (#) bağlantılar gerçek dosyalarla değiştirildi.
+         Tüm belgeler "dosyalar" klasöründe duruyor. -->
     <main>
         <section>
-            <h2>Geçmiş Yılların Başarılı Raporları</h2>
-            <p>Bu sayfada, önceki TEKNOFEST Çip Tasarım Yarışmalarında dereceye giren takımların hazırladığı ve bizim projemize rehberlik edecek örnek Ön Tasarım ve Detaylı Tasarım raporları yer almaktadır:</p>
-            
-            <!-- Raporlar Tablosu -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Yıl / Sezon</th>
-                        <th>Rapor Adı ve Açıklama</th>
-                        <th>İncele / İndir</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2024 Şampiyonu</td>
-                        <td><strong>Ön Tasarım Raporu (ÖTR) Örneği:</strong> Mimari blok şemaları ve veri yolu analizleri.</td>
-                        <td><a href="#" class="btn" style="padding: 6px 12px; font-size: 0.85rem;">PDF İndir</a></td>
-                    </tr>
-                    <tr>
-                        <td>2024 Şampiyonu</td>
-                        <td><strong>Detaylı Tasarım Raporu (DTR) Örneği:</strong> RTL kod simülasyonları ve GDSII akış detayları.</td>
-                        <td><a href="#" class="btn" style="padding: 6px 12px; font-size: 0.85rem;">PDF İndir</a></td>
-                    </tr>
-                    <tr>
-                        <td>2025 Finalisti</td>
-                        <td><strong>Örnek Sistem Mimarisi Raporu:</strong> Düşük güç tüketimli çip tasarımı optimizasyonları.</td>
-                        <td><a href="#" class="btn" style="padding: 6px 12px; font-size: 0.85rem;">PDF İndir</a></td>
-                    </tr>
-                    <tr>
-                        <td>Projemiz (2026)</td>
-                        <td><strong>Kendi Plan Belgemiz:</strong> BLM2537 dönemi 9 haftalık gelişim yol haritamız.</td>
-                        <td><a href="#" class="btn" style="padding: 6px 12px; font-size: 0.85rem;">Planı İncele</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <!-- Ana Sayfaya Dönüş Butonu -->
-            <div style="margin-top: 30px; text-align: center;">
-                <a href="index.html" class="btn">Ana Sayfaya Dön</a>
+            <h2>Resmi Şartname</h2>
+            <div class="tablo-kutu">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Belge</th>
+                            <th>Açıklama</th>
+                            <th>Dosya</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026 Teknik Şartname (v1.3)</td>
+                            <td>Takvim, katılım kuralları, puanlama ve tasarım isterleri. Özeti <a href="kurallar.html">Kurallar</a> sayfasında.</td>
+                            <td><a href="dosyalar/sartname-2026.pdf" target="_blank" class="btn btn-kucuk">PDF Aç</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
+
+        <section>
+            <h2>2026 Rapor ve Sunum Şablonları</h2>
+            <p>Raporlar bu şablonlara uygun hazırlanmalı ve PDF olarak yüklenmelidir.</p>
+            <div class="tablo-kutu">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Şablon</th>
+                            <th>Kategori</th>
+                            <th>Biçim</th>
+                            <th>İndir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ön Tasarım Raporu (ÖTR)</td>
+                            <td>Analog</td>
+                            <td>Word</td>
+                            <td><a href="dosyalar/otr-sablonu-analog-2026.docx" download class="btn btn-kucuk">İndir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ön Tasarım Raporu (ÖTR)</td>
+                            <td>Mikrodenetleyici</td>
+                            <td>Word</td>
+                            <td><a href="dosyalar/otr-sablonu-mikrodenetleyici-2026.docx" download class="btn btn-kucuk">İndir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Detay Tasarım Raporu (DTR)</td>
+                            <td>Analog</td>
+                            <td>Word</td>
+                            <td><a href="dosyalar/dtr-sablonu-analog-2026.docx" download class="btn btn-kucuk">İndir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Detay Tasarım Raporu (DTR)</td>
+                            <td>Mikrodenetleyici</td>
+                            <td>Word</td>
+                            <td><a href="dosyalar/dtr-sablonu-mikrodenetleyici-2026.docx" download class="btn btn-kucuk">İndir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Final Sunum Taslağı</td>
+                            <td>Analog</td>
+                            <td>PowerPoint</td>
+                            <td><a href="dosyalar/sunum-taslagi-analog-2026.pptx" download class="btn btn-kucuk">İndir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Final Sunum Taslağı</td>
+                            <td>Mikrodenetleyici</td>
+                            <td>PowerPoint</td>
+                            <td><a href="dosyalar/sunum-taslagi-mikrodenetleyici-2026.pptx" download class="btn btn-kucuk">İndir</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Geçmiş Yıl Raporları (2022 – Analog Kategorisi)</h2>
+            <p>Yarışmanın ilk yılında analog kategorisinde rapor hazırlayan takımların raporları. Kendi raporumuzu yazarken yapı ve anlatım için örnek alıyoruz.</p>
+            <div class="tablo-kutu">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Takım</th>
+                            <th>Proje</th>
+                            <th>Sayfa</th>
+                            <th>İncele</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CHIPWARE</td>
+                            <td>Anti Noise</td>
+                            <td>20</td>
+                            <td><a href="dosyalar/2022-analog-chipware.pdf" target="_blank" class="btn btn-kucuk">PDF Aç</a></td>
+                        </tr>
+                        <tr>
+                            <td>İTÜ VLSI</td>
+                            <td>LTE standardı için 4. dereceden çift bant alçak geçiren aktif süzgeç</td>
+                            <td>22</td>
+                            <td><a href="dosyalar/2022-analog-itu-vlsi.pdf" target="_blank" class="btn btn-kucuk">PDF Aç</a></td>
+                        </tr>
+                        <tr>
+                            <td>GATE</td>
+                            <td>ANİBAL</td>
+                            <td>15</td>
+                            <td><a href="dosyalar/2022-analog-gate-anibal.pdf" target="_blank" class="btn btn-kucuk">PDF Aç</a></td>
+                        </tr>
+                        <tr>
+                            <td>Küp-X</td>
+                            <td>CHEEF-X</td>
+                            <td>29</td>
+                            <td><a href="dosyalar/2022-analog-kup-x.pdf" target="_blank" class="btn btn-kucuk">PDF Aç</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="bilgi-kutu">Şartnameye göre geçmiş yıl raporlarından alıntı yapılırsa kaynak gösterilmelidir; kopyalama tespit edilirse takım elenir.</p>
+        </section>
+
+        <section>
+            <h2>Kendi Proje Belgemiz</h2>
+            <div class="tablo-kutu">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Belge</th>
+                            <th>Açıklama</th>
+                            <th>İncele</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Plan Belgesi (2026)</td>
+                            <td>BLM2537 dönemi 9 haftalık web sitesi geliştirme yol haritamız</td>
+                            <td><a href="dosyalar/plan-belgesi.pdf" target="_blank" class="btn btn-kucuk">PDF Aç</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="index.html" class="btn">Ana Sayfaya Dön</a>
+        </div>
     </main>
 
-    <!-- Alt Bilgi -->
     <footer>
-        <p style="text-align: center; margin-top: 25px; color: #666; font-size: 0.9rem;">
-            &copy; 2026 TEKNOFEST Çip Tasarım Takımı | BLM2537 Projesi
-        </p>
+        <p>&copy; 2026 TEKNOFEST Çip Tasarım | ÖGE Takımı</p>
     </footer>
 
 </body>
